@@ -1,8 +1,8 @@
-# Welcome to your Lovable project
+# Welcome to your zimmi project
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/bc79c07f-2244-4e32-b571-d4b969bd37f4
+**URL**: https://zirrmi.dev/projects/bc79c07f-2244-4e32-b571-d4b969bd37f4
 
 ## How can I edit this code?
 
@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bc79c07f-2244-4e32-b571-d4b969bd37f4) and start prompting.
+Simply visit the [Lovable Project](https://zirrmi e.dev/projects/bc79c07f-2244-4e32-b571-d4b969bd37f4) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -62,7 +62,7 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/bc79c07f-2244-4e32-b571-d4b969bd37f4) and click on Share -> Publish.
+Simply open [Lovable](https://zirrmi e.dev/projects/bc79c07f-2244-4e32-b571-d4b969bd37f4) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
