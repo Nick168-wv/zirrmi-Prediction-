@@ -1,0 +1,111 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2025 Modern Design System - Blue, Yellow, Orange theme */
+
+@layer base {
+  :root {
+    --background: 220 27% 6%;
+    --foreground: 210 20% 98%;
+
+    --card: 224 27% 8%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 224 27% 8%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 210 100% 56%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 210 100% 56%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 27% 6%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 210 100% 56%;
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 210 100% 56%;
+
+    /* 2025 Blue, Yellow, Orange Gradients */
+    --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #fbbf24 25%, #f97316 50%, #06b6d4 75%, #1d4ed8 100%);
+    --gradient-secondary: linear-gradient(135deg, #fbbf24 0%, #f97316 50%, #3b82f6 100%);
+    --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #ef4444 50%, #3b82f6 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(251, 191, 36, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(249, 115, 22, 0.05) 0%, transparent 50%);
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+  
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-bg {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .modern-card {
+    @apply glass-effect rounded-2xl p-8 hover:bg-white/10 transition-all duration-500;
+  }
+
+  .modern-button {
+    @apply relative overflow-hidden rounded-xl px-8 py-4 font-semibold text-white transition-all duration-300;
+    background: var(--gradient-primary);
+  }
+
+  .modern-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+  }
+
+  .verification-input {
+    @apply w-16 h-16 text-center text-2xl font-bold rounded-xl bg-white/10 border-2 border-white/20 focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-200;
+  }
+}
